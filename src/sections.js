@@ -17,7 +17,12 @@ export default [
         text: 'I am a Software Developer based in Lexington, Kentucky. I graduated from Taylor University in December 2019 with a Bachelor\'s of Science in Computer Science.'
     },
     {
-        title: 'Notable Projects',
+        title: 'Experience',
+        id: 'experience',
+        text: 'I have worked for a number of employers.'
+    },
+    {
+        title: 'Projects',
         id: 'projects',
         text: 'During my career I\'ve gotten to work on some pretty cool projects with awesome people.' +
         '<br/><br/>' +

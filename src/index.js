@@ -1,36 +1,32 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import BioSections from './sections.js';
 import ResumePDF from './docs/Ryan_Jones_Resume.pdf';
+import './index.css';
 
 class HamburgerMenu extends Component {
     render() {
+        let menuItems = this.props.items.map((i, key) => {
+            if(i.type === 'image' || i.title === '') return '';
+            return (
+                <a key={key} href={'#' + i.id}><li className="menu-item"># {i.title}</li></a>
+            );
+        });
+
         return (
-            <div></div>
+            <div className="hamburger-menu">
+                <ul className="no-style">
+                    {menuItems}
+                </ul>
+            </div>
         );
     }
 }
 
 class Hamburger extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            active: false
-        };
-    }
-
-    toggleClass() {
-        const currentState = this.state.active;
-        this.setState({active: !currentState});
-    }
-
     render() {
         return (
-            <div 
-                className={this.state.active ? 'nav-icon is-active' : 'nav-icon'}
-                onClick={() => { this.toggleClass() }}
-            >
+            <div className='nav-icon' onClick={() => {this.props.handleClick()}}>
                 <div></div>
             </div>
         );
@@ -46,14 +42,19 @@ class NavBar extends Component {
         };
     }
 
+    handleClick() {
+        this.setState({active : !this.state.active});
+    }
+
     render() {
+        let menu = this.state.active? (<HamburgerMenu items={BioSections}/>) : ('');
         return (
             <div>
                 <div className="navigation">
                      <div className="header-name">Ryan Jones</div>
-                    {/* <Hamburger /> */}
+                    <Hamburger handleClick={() => {this.handleClick()}}/>
                 </div>
-                {/* <HamburgerMenu active={this.state.active}/> */}
+                {menu}
             </div>
         );
     }
