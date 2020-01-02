@@ -32,6 +32,35 @@ body {
     display: block;
 }
 
+.x-icon {
+    margin: 1em;
+    width: 32px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.x-icon:before,
+.x-icon:after,
+.x-icon div {
+    background-color: var(--foreground-color);
+    height: 5px;
+    margin: 7px 0;
+    content: '';
+    display: block;
+}
+
+.x-icon:before {
+    transform: translateY(12px) rotate(135deg);
+}
+  
+.x-icon:after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+
+.x-icon div{
+    transform: scale(0);
+}
+
 .hamburger-menu {
     margin: 0;
     width: 100%;
@@ -82,11 +111,11 @@ body {
     width: 100%;
     box-shadow: 0 0 8px 8px #eee inset;
     
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+     -ms-animation: fadein 1s; /* Internet Explorer */
+      -o-animation: fadein 1s; /* Opera < 12.1 */
+         animation: fadein 1s;
 }
 
 
@@ -101,7 +130,7 @@ body {
 }
 
 .section-title {
-    font-size: 32pt;
+    font-size: 36pt;
     text-align: center;
 }
 
@@ -109,12 +138,34 @@ body {
     font-size: 16pt;
 }
 
+.exp-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--background-color);
+}
+
+.exp-company {
+    font-size: 24pt;
+}
+
+.exp-location {
+    opacity: 0.5;
+}
+
+.exp-duration {
+    text-align: center;
+    margin: 5px;
+}
+
 .footer {
     background-color: var(--background-color);
+    color: var(--foreground-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .footer a {
@@ -156,7 +207,7 @@ body {
     }
 
     .section {
-        width: 40%;
+        width: 50%;
         text-align: justify;
     }
 
@@ -173,9 +224,7 @@ body {
     }
 
     .hamburger-menu {
-        width: 30%;
-        margin-right: 0;
-        margin-left: auto;
+        text-align: center;
     }
 }
 

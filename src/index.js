@@ -7,14 +7,14 @@ import './index.css';
 class HamburgerMenu extends Component {
     render() {
         let menuItems = this.props.items.map((i, key) => {
-            if(i.type === 'image' || i.title === '') return '';
+            if(i.type === 'image' || i.type === 'experience' || i.title === '') return '';
             return (
                 <a key={key} href={'#' + i.id}><li className="menu-item"># {i.title}</li></a>
             );
         });
 
         return (
-            <div className="hamburger-menu">
+            <div className="hamburger-menu" onClick={() => {this.props.handleClick()}}>
                 <ul className="no-style">
                     {menuItems}
                 </ul>
@@ -26,7 +26,7 @@ class HamburgerMenu extends Component {
 class Hamburger extends Component {
     render() {
         return (
-            <div className='nav-icon' onClick={() => {this.props.handleClick()}}>
+            <div className={this.props.active ? 'x-icon' : 'nav-icon'} onClick={() => {this.props.handleClick()}}>
                 <div></div>
             </div>
         );
@@ -47,12 +47,12 @@ class NavBar extends Component {
     }
 
     render() {
-        let menu = this.state.active? (<HamburgerMenu items={BioSections}/>) : ('');
+        let menu = this.state.active? (<HamburgerMenu handleClick={() => {this.handleClick()}} items={BioSections}/>) : ('');
         return (
             <div>
                 <div className="navigation">
                      <div className="header-name">Ryan Jones</div>
-                    <Hamburger handleClick={() => {this.handleClick()}}/>
+                    <Hamburger handleClick={() => {this.handleClick()}} active={this.state.active}/>
                 </div>
                 {menu}
             </div>
@@ -88,42 +88,62 @@ class Section extends Component {
     }
 }
 
+class Experience extends Component {
+    render() {
+        let exp = this.props.exp;
+        return (
+            <div className="section">
+                <div className="exp-title">
+                    <div className="exp-company">{exp.company}</div>
+                    <div className="exp-company exp-location">{exp.location}</div>
+                </div>
+                <div className="exp-duration">{exp.position}</div>
+                <div className="exp-duration">{exp.duration}</div>
+                <div className="section-text">{exp.text}</div>
+            </div>
+        );
+    }
+}
+
 class Footer extends Component {
     render() {
         return (
-            <div className="footer">
-                <a 
-                    className="link-text"
-                    href="https://linkedin.com/in/ryanjonescode"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    LinkedIn
-                </a>
-                <a 
-                    className="link-text"
-                    href="https://github.com/leftshiftjones"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    Github
-                </a>
-                <a 
-                    className="link-text"
-                    href="https://github.com/leftshiftjones/portfolio"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    Portfolio
-                </a>
-                <a 
-                    className="link-text"
-                    href={ResumePDF}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    Resume
-                </a>
+            <div>
+                <div className="footer">
+                    <a 
+                        className="link-text"
+                        href="https://linkedin.com/in/ryanjonescode"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        {'{'} LinkedIn {'}'}
+                    </a>
+                    <a 
+                        className="link-text"
+                        href="https://github.com/leftshiftjones"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        {'{'} Github {'}'}
+                    </a>
+                    <a 
+                        className="link-text"
+                        href="https://github.com/leftshiftjones/portfolio"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        {'{'} Portfolio {'}'}
+                    </a>
+                    <a 
+                        className="link-text"
+                        href={ResumePDF}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        {'{'} Resume {'}'}
+                    </a>
+                </div>
+                <div className="footer">Site built using React | Hosted by Github</div>
             </div>
         );
     }
@@ -135,6 +155,10 @@ class Site extends Component {
             if(s.type === 'image') {
                 return (
                     <Image key={key} src={s.src} alt={s.alt} caption={s.caption} />
+                );
+            } else if(s.type === 'experience') {
+                return (
+                    <Experience key={key} exp={s} />
                 );
             }
             return (

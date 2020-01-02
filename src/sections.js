@@ -22,6 +22,14 @@ export default [
         text: 'I have worked for a number of employers.'
     },
     {
+        type: 'experience',
+        company: 'Bizstream Inc.',
+        location: 'Allendale, MI',
+        position: 'Full-Stack Web Developer',
+        duration: 'May 2019 -- Present',
+        text: 'I joined Bizstream as an intern in summer of 2019 as a full-stack web developer. After working there a short while I was brought on as a full-time team member. '
+    },
+    {
         title: 'Projects',
         id: 'projects',
         text: 'During my career I\'ve gotten to work on some pretty cool projects with awesome people.' +
