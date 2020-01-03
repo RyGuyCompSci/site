@@ -99,7 +99,7 @@ class Experience extends Component {
                 </div>
                 <div className="exp-duration">{exp.position}</div>
                 <div className="exp-duration">{exp.duration}</div>
-                <div className="section-text">{exp.text}</div>
+                <div className="section-text" dangerouslySetInnerHTML={{__html: exp.text}}></div>
             </div>
         );
     }

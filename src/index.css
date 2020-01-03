@@ -8,6 +8,7 @@ html {
     font-family: 'Muli', sans-serif;
     overflow-y: auto;
     background-color: var(--foreground-color);
+    color: var(--background-color);
 }
 
 body {
@@ -20,6 +21,12 @@ body {
     width: 32px;
     cursor: pointer;
     padding: 0 10px;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+.nav-icon:hover {
+    opacity: 0.5;
 }
 
 .nav-icon:before,
@@ -37,6 +44,12 @@ body {
     width: 32px;
     cursor: pointer;
     padding: 0 10px;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+}
+
+.x-icon:hover {
+    opacity: 0.5;
 }
 
 .x-icon:before,
@@ -154,6 +167,7 @@ body {
 }
 
 .exp-duration {
+    font-size: 16pt;
     text-align: center;
     margin: 5px;
 }
@@ -207,7 +221,7 @@ body {
     }
 
     .section {
-        width: 50%;
+        width: 40%;
         text-align: justify;
     }
 
