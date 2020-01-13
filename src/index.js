@@ -88,14 +88,31 @@ class Section extends Component {
     }
 }
 
+class Skill extends Component {
+    render() {
+        console.log(this.props);
+        let skills = this.props.skills.data.map((skill, key) => {
+            return (
+                <div className="section-text" key={key}>{skill.item}</div>
+            );
+        });
+        return (
+            <div>
+                {skills}
+            </div>
+        );
+    }
+}
+
 class Experience extends Component {
     render() {
         let exp = this.props.exp;
+        let loc = exp.location ? (<div className="exp-company exp-location">{exp.location}</div>) : null;
         return (
             <div className="section">
                 <div className="exp-title">
                     <div className="exp-company">{exp.company}</div>
-                    <div className="exp-company exp-location">{exp.location}</div>
+                    {loc}
                 </div>
                 <div className="exp-duration">{exp.position}</div>
                 <div className="exp-duration">{exp.duration}</div>
@@ -159,6 +176,10 @@ class Site extends Component {
             } else if(s.type === 'experience') {
                 return (
                     <Experience key={key} exp={s} />
+                );
+            } else if(s.type === 'skills') {
+                return (
+                    <Skill key={key} skills={s} />
                 );
             }
             return (
