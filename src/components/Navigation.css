@@ -1,0 +1,21 @@
+.nav {
+  --blur-amt: 8px;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--transluscent-black);
+  backdrop-filter: blur(var(--blur-amt));
+  -webkit-backdrop-filter: blur(var(--blur-amt));
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0 16px;
+}

@@ -1,0 +1,96 @@
+.app {
+  margin: 0;
+  margin-top: var(--nav-height);
+  padding: 1rem;
+  /* padding-top: var(--nav-height); */
+  z-index: 5;
+  overflow: auto;
+}
+
+@keyframes blink {
+  from {
+    visibility: visible;
+  }
+
+  to {
+    visibility: hidden;
+  }
+}
+
+.blinker {
+  animation: blink 1.5s steps(2, start) infinite;
+}
+
+.intro {
+  text-align: center;
+  color: var(--white);
+}
+
+.box {
+  font-family: "Secular One", sans-serif !important;
+  aspect-ratio: 1;
+}
+
+.linkToTop {
+  position: fixed;
+  right: 0.5rem;
+  bottom: 0;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  border-bottom: 1px solid transparent;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0%;
+}
+
+.hidden-parent {
+  color: var(--white);
+}
+
+.hidden-child {
+  width: 0;
+  height: 0;
+  position: fixed;
+  opacity: 0%;
+}
+
+.square {
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 1200px) {
+  .hidden-parent:hover > .hidden-child {
+    width: 35vw;
+  }
+}
+
+@media (min-width: 1201px) {
+  .hidden-parent:hover > .hidden-child {
+    width: 15vw;
+  }
+}
+
+.hidden-parent:hover > .hidden-child {
+  height: auto;
+  opacity: 100%;
+  transition: opacity 0.3s ease-in;
+}
+
+.child-to-show {
+  height: 0;
+}
+
+.child-to-hide {
+  width: 100%;
+  height: auto;
+}
+
+.hide-parent:hover .child-to-hide {
+  height: 0;
+}
+
+.hide-parent:hover .child-to-show {
+  width: 100%;
+  height: auto;
+}
