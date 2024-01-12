@@ -2,9 +2,13 @@
   margin: 0;
   margin-top: var(--nav-height);
   padding: 1rem;
-  /* padding-top: var(--nav-height); */
   z-index: 5;
   overflow: auto;
+}
+
+a {
+  color: #fff !important;
+  text-decoration: none;
 }
 
 @keyframes blink {
