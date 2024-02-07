@@ -17,5 +17,9 @@
 .nav a {
   color: inherit;
   text-decoration: none;
-  margin: 0 16px;
+  margin: 0 8px;
+}
+
+#title {
+  font-size: 18pt;
 }

@@ -2,9 +2,7 @@ import "./Navigation.css";
 
 const Navigation = () => (
   <div className="nav big-font">
-    <h3 className="m-0">
-      <a href="/">ryguycompsci</a>
-    </h3>
+    <a id="title" href="/">ryguycompsci</a>
     <div>
       <a href="#about">about</a>
       <a href="#resume">resume</a>

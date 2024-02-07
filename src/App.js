@@ -48,6 +48,7 @@ const App = () => {
           <img
             src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTNmMzVhNWI5ZjVlYjZlNzJmYzBhMDliNDJhYjRlMzgzMDdmNDlmMiZjdD1n/ZAaaCK5RhUWxG/giphy.gif"
             alt="Stitch gif"
+            title="Stitch is my favorite animated character"
             className="child-to-show square rounded-lg d-block mx-auto"
           />
         </div>
@@ -60,7 +61,7 @@ const App = () => {
           <p>
             I'm a full-stack developer in Grand Rapids, MI with more than five
             years of work experience. Web development has been my primary
-            passion but I've had the opportunity to work on more than web
+            passion but I've had the opportunity to work with a variety of
             technologies.
           </p>
           <p>
@@ -106,13 +107,28 @@ const App = () => {
                 alt="Bitwerx logo"
               />
             </a>
-            , and more. Never afraid of a challenge, I enjoy finding new
+            , and
+
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://dornerworks.com"
+              className="ms-1 hidden-parent"
+            >
+              more
+              <img
+                src="https://media.licdn.com/dms/image/D560BAQHsQRXJgLORXA/company-logo_200_200/0/1697478368780/dornerworks_logo?e=2147483647&v=beta&t=gqUq1yNrMdQQN-Nk2d-ESx1U0Evb4SQfIJd_S4J7u14"
+                className="hidden-child dark-border rounded p-2 bg-blue"
+                alt="Dornerworks logo"
+              />
+            </a>
+            . Never afraid of a challenge, I enjoy finding new
             problems and ways to solve them.
           </p>
           <p>
             My experience goes beyond development. When the situation has demanded I've taken the role
             of a product owner, project manager My motto is
-            "see a need; meet it."
+            "See a need: meet it."
           </p>
         </Box>
       </Col>
@@ -123,10 +139,10 @@ const App = () => {
             <li>C#</li>
             <li>TypeScript | JavaScript</li>
             <li>SQL</li>
-            <li>Ruby</li>
             <li>Bash</li>
+            <li>Ruby</li>
             <li>C | C++</li>
-            <li>Go</li>
+            <li>Go | Rust (learning these)</li>
           </ul>
         </Box>
       </Col>
@@ -139,10 +155,12 @@ const App = () => {
             <li>Git</li>
             <li>.NET 5+</li>
             <li>React | Angular</li>
+            <li>JetBrains IDE's | VS Code | Vim</li>
             <li>Ruby on Rails</li>
             <li>PostgreSQL | SQL Server | SQLite</li>
             <li>Qt 5</li>
             <li>Redis</li>
+            <li>ChatGPT (supplementary dev tool)</li>
           </ul>
         </Box>
       </Col>
@@ -150,14 +168,11 @@ const App = () => {
         <Box>
           <h2 className="mb-4 text-end">programming</h2>
           <p>
-            I've been programming since my sophomore year of high school when
-            my science teacher offered a Python programming class. My brain
-            clicked with the problem-solving that goes into software
-            development and I've been hooked ever since.
+            I've been coding since my science teacher offered a python class my sophomore year of high school.
+            My brain clicked with the problem-solving that goes into software development and I've been hooked ever since.
           </p>
           <p>
-            I've written code at many levels from JavaScript and Python down to
-            assembly and byte code running on RISC processors. I've even
+            I've written code at many levels, from JavaScript and Python down to assembly and byte code running on RISC processors. I've even
             written code that got{" "}
             <a
               target="_blank"
@@ -178,7 +193,7 @@ const App = () => {
               href="https://www.theechonews.com/article/2019/04/big-dreams-compete-with-little-time-at-game-jam-2019"
               className="hidden-parent"
             >
-              a couple winning Game Jam games
+              worked on a few winning Game Jam games
               <img
                 className="hidden-child dark-border rounded square"
                 src="game-jam.jpg"
@@ -253,22 +268,24 @@ const App = () => {
           <ResumeEntry
             name="Cloud Solutions Engineer III"
             position="DornerWorks | Grand Rapids, MI"
-            duration="NOV 2021 -- NOW"
+            duration="NOV 2021 -- PRESENT"
           >
             <ul>
               <li>Operating as a full-stack engineer specializing in <a href="https://dornerworks.com/solutions/product-development/iot-solutions/" target="_blank" rel="noreferrer">web-facing and IoT projects</a></li>
               <li>Handling multiple simultaneous projects while maintaining a high degree of code quality and customer engagement</li>
               <li>Working closely with sales and business development to close deals with prospective customers</li>
               <li>Promoting employee-driven initiatives for growth and accountability within the company</li>
+              <li>Hired on as level II engineer, received promotion to level III engineer within 18 months</li>
               <li>
                 Technologies included:
                 <ul>
-                  <li>AWS</li>
-                  <li>Gitlab</li>
+                  <li>AWS | Azure</li>
+                  <li>Gitlab | Azure DevOps | Jira</li>
                   <li>Terraform | Serverless</li>
-                  <li>.NET / MAUI</li>
-                  <li>React</li>
+                  <li>C# | .NET</li>
+                  <li>React | Angular</li>
                   <li>Ruby on Rails</li>
+                  <li>C++ | Qt</li>
                 </ul>
               </li>
             </ul>
@@ -373,7 +390,7 @@ const App = () => {
           <ul>
             <li>
               <a href="mailto:ryanjones.code@gmail.com">
-                ryanjones.code@gmail.com
+              ryanjones.code@gmail.com
               </a>
             </li>
             <li>
