@@ -6,7 +6,7 @@ const Navigation = () => (
     <div>
       <a href="#about">about</a>
       <a href="#resume">resume</a>
-      <a href="#contact">contact</a>
+      <a href="#connect">connect</a>
     </div>
   </div>
 );

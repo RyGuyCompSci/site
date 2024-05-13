@@ -43,14 +43,14 @@ const App = () => {
           <img
             src="./ryan-couch.jpeg"
             alt="Ryan on a couch"
-            className="bw child-to-hide square rounded-lg d-block mx-auto"
+            className="bw square rounded-lg d-block mx-auto"
           />
-          <img
+          {/* <img
             src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTNmMzVhNWI5ZjVlYjZlNzJmYzBhMDliNDJhYjRlMzgzMDdmNDlmMiZjdD1n/ZAaaCK5RhUWxG/giphy.gif"
             alt="Stitch gif"
             title="Stitch is my favorite animated character"
             className="child-to-show square rounded-lg d-block mx-auto"
-          />
+          /> */}
         </div>
       </Col>
     </Row>
@@ -59,8 +59,8 @@ const App = () => {
         <Box>
           <h2 className="mb-4">career</h2>
           <p>
-            I'm a full-stack developer in Grand Rapids, MI with more than five
-            years of work experience. Web development has been my primary
+            I'm a full-stack developer in Grand Rapids, MI with over five
+            years of professional work experience. Web development has been my primary
             passion but I've had the opportunity to work with a variety of
             technologies.
           </p>
@@ -128,7 +128,7 @@ const App = () => {
           <p>
             My experience goes beyond development. When the situation has demanded I've taken the role
             of a product owner, project manager My motto is
-            "See a need: meet it."
+            <i className="ms-1">See a need? Meet it.</i>
           </p>
         </Box>
       </Col>
@@ -226,9 +226,8 @@ const App = () => {
                 className="hidden-child dark-border rounded square"
               />
             </a>
-            . Life has taken me many places and I've had the opportunity to
-            live in many cool cities. For now I've settled in West Michigan, a
-            short drive from the Lake and the heart of downtown Grand Rapids.
+            . Life has taken me many places and for now I've settled in West Michigan just a
+            short drive away from the Lake and the heart of downtown Grand Rapids.
           </p>
           <p>
             Instead of a rubber ducky I talk to
@@ -384,13 +383,13 @@ const App = () => {
       </Col>
     </Row>
     <Row>
-      <Col lg="3" className="my-4 mx-auto" id="contact">
+      <Col lg="3" className="my-4 mx-auto" id="connect">
         <Box>
-          <h2 className="mb-4 text-center">contact</h2>
+          <h2 className="mb-4 text-center">connect</h2>
           <ul>
             <li>
               <a href="mailto:ryanjones.code@gmail.com">
-              ryanjones.code@gmail.com
+                ryanjones.code@gmail.com
               </a>
             </li>
             <li>
