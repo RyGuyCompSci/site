@@ -41,7 +41,7 @@ const App = () => {
         <h1 className="text-center big-font">Hi, I'm Ryan</h1>
         <div className="square hide-parent w-80 p-0 mx-auto">
           <img
-            src="./ryan-couch.jpeg"
+            src="./ryan-couch.jpg"
             alt="Ryan on a couch"
             className="bw square rounded-lg d-block mx-auto"
           />
@@ -183,7 +183,7 @@ const App = () => {
               launched on a satellite
               <img
                 className="hidden-child dark-border rounded square"
-                src="ryan-launch.jpeg"
+                src="ryan-launch.jpg"
                 alt="Ryan at the NG-11 launch"
               />
             </a>{" "} and {" "}
