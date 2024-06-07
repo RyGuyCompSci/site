@@ -276,7 +276,7 @@ const App = () => {
               <li>Promoting employee-driven initiatives for growth and accountability within the company</li>
               <li>Hired on as level II engineer, received promotion to level III engineer within 18 months</li>
               <li>
-                Technologies included:
+                Technologies used:
                 <ul>
                   <li>AWS | Azure</li>
                   <li>Gitlab | Azure DevOps | Jira</li>
@@ -314,7 +314,7 @@ const App = () => {
                 map transaction line items for automatic data conversions
               </li>
               <li>
-                Technologies included:
+                Technologies used:
                 <ul>
                   <li>.NET Core 3.1</li>
                   <li>Microsoft Azure</li>
