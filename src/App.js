@@ -112,14 +112,14 @@ const App = () => {
                         <a
                             target="_blank"
                             rel="noreferrer"
-                            href="https://dornerworks.com"
+                            href="https://gentex.com"
                             className="ms-1 hidden-parent"
                         >
                             more
                             <img
-                                src="https://media.licdn.com/dms/image/D560BAQHsQRXJgLORXA/company-logo_200_200/0/1697478368780/dornerworks_logo?e=2147483647&v=beta&t=gqUq1yNrMdQQN-Nk2d-ESx1U0Evb4SQfIJd_S4J7u14"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDcT2Nwy3H0_KNdtP6-k_pIA37io1MgNhQ0A&s"
                                 className="hidden-child dark-border rounded p-2 bg-blue"
-                                alt="Dornerworks logo"
+                                alt="Gentex logo"
                             />
                         </a>
                         . Never afraid of a challenge, I enjoy finding new
@@ -136,13 +136,13 @@ const App = () => {
                 <Box>
                     <h2 className="mb-4 text-center">languages</h2>
                     <ul>
-                        <li>C#</li>
-                        <li>TypeScript | JavaScript</li>
+                        <li>TypeScript</li>
                         <li>SQL</li>
+                        <li>Python</li>
                         <li>Bash</li>
+                        <li>C#</li>
                         <li>Ruby</li>
                         <li>C | C++</li>
-                        <li>Go | Rust (learning these)</li>
                     </ul>
                 </Box>
             </Col>
@@ -153,14 +153,19 @@ const App = () => {
                     <h2 className="mb-4 text-center">tools & frameworks</h2>
                     <ul>
                         <li>Git</li>
-                        <li>.NET 5+</li>
-                        <li>React | Angular</li>
-                        <li>JetBrains IDE's | VS Code | Vim</li>
+                        <li>.NET</li>
+                        <li>Svelte</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>VS Code</li>
+                        <li>JetBrains IDE's</li>
+                        <li>Vim</li>
                         <li>Ruby on Rails</li>
-                        <li>PostgreSQL | SQL Server | SQLite</li>
-                        <li>Qt 5</li>
+                        <li>PostgreSQL</li>
+                        <li>SQL Server</li>
+                        <li>SQLite</li>
                         <li>Redis</li>
-                        <li>ChatGPT (supplementary dev tool)</li>
+                        <li>LLM's (supplementary development tool)</li>
                     </ul>
                 </Box>
             </Col>
@@ -249,10 +254,10 @@ const App = () => {
                 <Box>
                     <h2 className="mb-4 text-center">platforms</h2>
                     <ul>
-                        <li>Azure | AWS (Cloud Practitioner Certified)</li>
+                        <li>AWS (Cloud Practitioner Certified) | Azure | Google Cloud</li>
                         <li>Linux | MacOS | Windows</li>
-                        <li>Gitlab | Azure DevOps | Github | BitBucket</li>
-                        <li>Gitlab Pipelines | Azure DevOps Pipelines | Jenkins</li>
+                        <li>Azure DevOps | Github | Gitlab | BitBucket</li>
+                        <li>Azure DevOps Pipelines | Gitlab Pipelines | Jenkins</li>
                     </ul>
                 </Box>
             </Col>
@@ -265,9 +270,18 @@ const App = () => {
                 <br className="d-lg-none" />
                 <Box>
                     <ResumeEntry
+                        name="Cloud Developer III"
+                        position="Gentex Corporation | Zeeland, MI"
+                        duration="AUG 2024 -- PRESENT"
+                    >
+                    </ResumeEntry>
+                </Box>
+                <br className="d-lg-none" />
+                <Box>
+                    <ResumeEntry
                         name="Cloud Solutions Engineer III"
                         position="DornerWorks | Grand Rapids, MI"
-                        duration="NOV 2021 -- PRESENT"
+                        duration="NOV 2021 -- AUG 2024"
                     >
                         <ul>
                             <li>Operating as a full-stack engineer specializing in <a href="https://dornerworks.com/solutions/product-development/iot-solutions/" target="_blank" rel="noreferrer">web-facing and IoT projects</a></li>
@@ -383,7 +397,7 @@ const App = () => {
             </Col>
         </Row>
         <Row>
-            <Col lg="3" className="my-4 mx-auto" id="connect">
+            <Col lg="4" className="mx-auto" id="connect">
                 <Box>
                     <h2 className="mb-4 text-center">connect</h2>
                     <ul>
