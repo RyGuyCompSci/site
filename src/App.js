@@ -274,6 +274,11 @@ const App = () => {
                         position="Gentex Corporation | Zeeland, MI"
                         duration="AUG 2024 -- PRESENT"
                     >
+                        <ul>
+                            <li>Technical lead for <u><a href="https://www.gentex.com/products-technology/automotive/connected-car/" target="_blank" rel="noreferrer">HomeLink</a></u> cloud services</li>
+                            <li>Workshopped new product features from ideation to deployment</li>
+                            <li>Managed team of 5 developers, hosting standups and managing scrum ceremonies</li>
+                        </ul>
                     </ResumeEntry>
                 </Box>
                 <br className="d-lg-none" />
