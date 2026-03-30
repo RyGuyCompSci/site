@@ -12,6 +12,7 @@
     background: var(--transluscent-black);
     backdrop-filter: blur(var(--blur-amt));
     -webkit-backdrop-filter: blur(var(--blur-amt));
+    padding-right: 16px;
 }
 
 .nav a {
