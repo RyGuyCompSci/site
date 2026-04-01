@@ -9,6 +9,9 @@ const App = () => {
         window.addEventListener("scroll", () => {
             const element = document.getElementById("scrollToTop");
             element.style.opacity = window.scrollY > 0 ? "100%" : "0%";
+
+            const offset = window.scrollY * 0.6;
+            document.body.style.backgroundPosition = `0px ${offset}px`;
         });
 
         window.addEventListener("mousemove", (event) => {
@@ -59,7 +62,7 @@ const App = () => {
                 <Box>
                     <h2 className="mb-4">career</h2>
                     <p>
-                        I'm a full-stack developer in Grand Rapids, MI with over five
+                        I'm a full-stack developer in Grand Rapids, MI with nearly ten
                         years of professional work experience. Web development has been my primary
                         passion but I've had the opportunity to work with a variety of
                         technologies.
@@ -127,7 +130,7 @@ const App = () => {
                     </p>
                     <p>
                         My experience goes beyond development. When the situation has demanded I've taken the role
-                        of a product owner, project manager My motto is
+                        of a developer, product owner, project manager, and stakeholder. I do what it takes to get the job done. My motto is
                         <i className="ms-1">See a need? Meet it.</i>
                     </p>
                 </Box>
@@ -198,7 +201,7 @@ const App = () => {
                             href="https://www.theechonews.com/article/2019/04/big-dreams-compete-with-little-time-at-game-jam-2019"
                             className="hidden-parent"
                         >
-                            worked on a few winning Game Jam games
+                            won a few Game Jams
                             <img
                                 className="hidden-child dark-border rounded square"
                                 src="game-jam.jpg"
@@ -427,6 +430,15 @@ const App = () => {
                                 href="https://www.linkedin.com/in/ryguycompsci/"
                             >
                                 LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://ryguycompsci.tech"
+                            >
+                                Website (wait, aren't you already here?)
                             </a>
                         </li>
                     </ul>
