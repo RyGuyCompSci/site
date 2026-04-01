@@ -405,7 +405,7 @@ const App = () => {
             </Col>
         </Row>
         <Row>
-            <Col lg="4" className="mx-auto" id="connect">
+            <Col lg="4" className="mx-auto mt-4" id="connect">
                 <Box>
                     <h2 className="mb-4 text-center">connect</h2>
                     <ul>
